@@ -5,6 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+require('.models/Cards');
+mongoose.connect('mongodb://localhost/MTG');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 

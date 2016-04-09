@@ -1,0 +1,46 @@
+Noted indicating how far I got.
+
+After finishing all the npm installs I imported a json file from mtgjson.com.
+After running into issues with json file taking a while to load I opened it in 
+notepad and removed majority of the cards except the first 4 and retyped the 
+json file to match the json structure type. After importing into mongodb I 
+confirmed that it was recognized by typing the show dbs command. Created model 
+folder with GraphData.js and inserted code. Inserted code for require mongoose, 
+model and connect to the database. At this point I checked to see if the 
+database was reading but it was not decided to continue with visualization. 
+Looked up chart types and decided to go with a pie chart indicating color types.
+Inserted code into pie-chart.html, views/index.js, and angular-chart.js. It 
+still won't run. 
+
+//noted21 Edward Lum
+
+
+
+mongod --smallfiles //to run the server
+mongo //open seperate terminal to start mongo
+
+mongo commands 
+    show dbs
+    use <db>
+    show collection
+    db.getName() //find dbs name
+    db name "MTG"
+    collection name "Cards"
+    
+model is called Cards.js
+
+https://assignment-1-noted21.c9users.io/cards
+
+^import json 
+ mapreduce
+^create model folder and Cards.js, insert code
+^require mongoose
+^require model
+^connect to the db
+^npm install mongoose
+^require index.js
+^route in index.js
+ http://www.sitepoint.com/creating-visualization-app-using-google-charts-api-angularjs/
+^visualization
+    
+    
